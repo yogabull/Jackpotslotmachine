@@ -1,12 +1,15 @@
 
 
 #Greeting and payouts
-#my name is John
+#my name is John jDunn
+
 print('Welcome to Jackpot slot machine!')
 userReadRules = input("If you want to know the payouts, please press P otherwise, any other key.")
 if userReadRules == "P" or userReadRules == "p":
 
 # @John, this is where you come in again
+# I'm gonna get after this!
+
     print("Three 7's: 35 to 1")
     print("Three BARS: 1 to 1")
     print("Three Cherries: 1 to 1")
