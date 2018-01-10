@@ -1,6 +1,7 @@
 
 
 #Greeting and payouts
+#my name is John
 print('Welcome to Jackpot slot machine!')
 userReadRules = input("If you want to know the payouts, please press P otherwise, any other key.")
 if userReadRules == "P" or userReadRules == "p":
@@ -16,7 +17,7 @@ if userReadRules == "P" or userReadRules == "p":
 #Initiate user Balance
 userBalance = 0
 userBetAmount = 21
-Continueplay = 'yes'
+continuePlay = 'yes'
 
 while (userBalance < 1 or userBalance >20) and userBetAmount != 0:
     userBalance = int(input('Please enter a starting balance not exceeding $20: '))
@@ -26,3 +27,6 @@ while (userBalance < 1 or userBalance >20) and userBetAmount != 0:
         print('Starting balance cannot be 0.')
     else:
         print("Your starting balance is " + str(userBalance))
+
+
+        #my name is carlos
