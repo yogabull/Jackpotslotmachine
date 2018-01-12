@@ -1,10 +1,12 @@
 import random
 import time
 
+
 # #Greeting and payouts
 print ()
 print('Welcome to Jackpot slot machine!')
 name = input ("What is your name? " )
+
 userReadRules = input("If you want to know the payouts, please press P otherwise, any other key.")
 if userReadRules == "P" or userReadRules == "p":
 
@@ -42,6 +44,7 @@ time.sleep (1)
 print("Okay " + name +", you can make one, two or three token bets.")
 bet = int(input("How many do you want to wager?"))
 
+
 while (bet < 1 or bet > 3) and bet !=0:
     if bet > 3:
         print("The max bet is 3, so we will reduce it to 3 tokens.")
@@ -49,11 +52,13 @@ while (bet < 1 or bet > 3) and bet !=0:
     elif bet == 0:
         print("Come on Jack, enter a bet between 1-3.")
 
+
 print()
 print ("You bet " + str(bet) + " tokens,")
 
 # time delay of three seconds added for reading.
 time.sleep (2)
+
 print ("OMG! this is exciting")
 
 # time delay of three seconds added for reading.
@@ -64,6 +69,7 @@ for x in range(1):
     reel_1 = (random.randint(1,6))
     reel_2 = (random.randint(1,6))
     reel_3 = (random.randint(1,6))
+
 result = (reel_1, reel_2, reel_3)
 
 # # remove later. Viewing results.
@@ -84,6 +90,7 @@ time.sleep (2)
 
 print ()
 print (symbol [reel_1] + "   " + symbol [reel_2] + "   " + symbol [reel_3])
+
 print ()
 
 if  [reel_1] ==  [reel_2] and  [reel_2] == [reel_3]:
@@ -93,6 +100,7 @@ elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
 
 # print ("Dang, you lost!")
 # print ("Your new balance is " + str(userBalance - bet))
+
 
 # use result variable to figure payout.
 # print(result)
