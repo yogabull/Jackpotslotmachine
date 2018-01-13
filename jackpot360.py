@@ -1,10 +1,12 @@
 import random
 import time
-#
+
+
 # #Greeting and payouts
 print ()
 print('Welcome to Jackpot slot machine!')
-name = input ("What is your name?")
+name = input ("What is your name? " )
+
 userReadRules = input("If you want to know the payouts, please press P otherwise, any other key.")
 if userReadRules == "P" or userReadRules == "p":
 
@@ -90,6 +92,12 @@ print ()
 print (symbol [reel_1] + "   " + symbol [reel_2] + "   " + symbol [reel_3])
 
 print ()
+
+if  [reel_1] ==  [reel_2] and  [reel_2] == [reel_3]:
+        print('Congratulations! You won')
+elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
+        print('You suck! Try again fool. ')
+
 # print ("Dang, you lost!")
 # print ("Your new balance is " + str(userBalance - bet))
 
