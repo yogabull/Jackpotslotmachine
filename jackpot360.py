@@ -104,3 +104,6 @@ elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
 
 # use result variable to figure payout.
 # print(result)
+
+# test commit and push to github
+print ("this is a test for github")
