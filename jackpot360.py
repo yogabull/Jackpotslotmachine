@@ -105,3 +105,5 @@ elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
 
 # use result variable to figure payout.
 # print(result)
+
+#line added to test again
