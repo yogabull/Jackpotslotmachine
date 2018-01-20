@@ -45,12 +45,13 @@ print("Okay " + name +", you can make one, two or three token bets.")
 bet = int(input("How many do you want to wager?"))
 
 
-while (bet < 1 or bet > 3) and bet !=0:
-    if bet > 3:
-        print("The max bet is 3, so we will reduce it to 3 tokens.")
-        bet = 3
-    elif bet == 0:
-        print("Come on Jack, enter a bet between 1-3.")
+# loop designed to accept only a bet of 1, 2, or 3
+valid_bet = [1,2,3]
+bet = int()
+while bet not in valid_bet:
+    bet = int(input("Enter bet: "))
+    if bet in valid_bet:
+        print (bet)
 
 
 print()
@@ -104,6 +105,3 @@ elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
 
 # use result variable to figure payout.
 # print(result)
-
-# test commit and push to github
-print ("this is a test for github")
