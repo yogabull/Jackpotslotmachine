@@ -20,19 +20,20 @@ if userReadRules == "P" or userReadRules == "p":
 
 #Initiate user Balance
 userBalance = 0
-userBetAmount = 21
+userBetAmount = 51
 continuePlay = 'yes'
 
 # time delay of three seconds added for reading.
 time.sleep (1)
 
-# loop designed to accept only a bet of 1, 2, or 3
-valid_bet = [1,2,3]
-bet = int()
-while bet not in valid_bet:
-    bet = int(input("Enter bet: "))
-    if bet in valid_bet:
-        print ("You bet " + str(bet) + " tokens,")
+while (userBalance < 1 or userBalance >50) and userBetAmount != 0:
+    userBalance = int(input('Please enter a starting balance not exceeding $50: '))
+    if userBalance > 50:
+        print('Balance amount exceeds maximum starting of $20.')
+    elif userBalance == 0:
+        print('Starting balance cannot be 0.')
+    else:
+        print("Your starting balance is " + str(userBalance))
 
 print()
 
@@ -54,16 +55,17 @@ while bet not in valid_bet:
         print ("You bet " + str(bet) + " tokens,")
     else:
         print ("A valid bet is 1, 2 or 3 tokens, {}." .format(name))
+        print ()
 
 
 # time delay of two seconds added and space added for reading.
-time.sleep (2)
+time.sleep (1)
 print()
 
 print ("OMG! this is exciting")
 
 # time delay of three seconds added for reading.
-time.sleep (2)
+time.sleep (1)
 
 # random number generates from 1-6. Each number matches a symbol in dictionary.
 for x in range(1):
