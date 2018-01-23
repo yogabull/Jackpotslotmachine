@@ -26,17 +26,15 @@ continuePlay = 'yes'
 # time delay of three seconds added for reading.
 time.sleep (1)
 
-while (userBalance < 1 or userBalance >50) and userBetAmount != 0:
-    userBalance = int(input('Please enter a starting balance not exceeding $50: '))
-    if userBalance > 50:
-        print("Whoa there cowboy! Your buy-in can't exceeds $50.")
-    elif userBalance == 0:
-        print("You can't play if you don't put down any money fool.")
-    else:
-        print()
-        time.sleep (1)
-        print("Your starting balance is " + str(userBalance) +" tokens")
-        print()
+# loop designed to accept only a bet of 1, 2, or 3
+valid_bet = [1,2,3]
+bet = int()
+while bet not in valid_bet:
+    bet = int(input("Enter bet: "))
+    if bet in valid_bet:
+        print ("You bet " + str(bet) + " tokens,")
+
+print()
 
 time.sleep (1)
 
@@ -45,15 +43,18 @@ print("Okay " + name +", you can make one, two or three token bets.")
 
 
 # this askes for how many tokens to bet.
+
 # loop designed to accept only a bet of 1, 2, or 3
 valid_bet = [1,2,3]
 bet = int()
 while bet not in valid_bet:
+
     bet = int(input("How many do you want to wager? "))
     if bet in valid_bet:
         print ("You bet " + str(bet) + " tokens,")
     else:
         print ("A valid bet is 1, 2 or 3 tokens, {}." .format(name))
+
 
 # time delay of two seconds added and space added for reading.
 time.sleep (2)
@@ -105,5 +106,4 @@ elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
 # use result variable to figure payout.
 # print(result)
 
-# test commit and push to github
-print ("this is a test for github")
+#line added to test again
