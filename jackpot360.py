@@ -40,23 +40,25 @@ time.sleep (1)
 
 # Explain bets amounts (1,2 or 3) and request bet amount.
 print("Okay " + name +", you can make one, two or three token bets.")
-bet = int(input("How many do you want to wager?"))
 
+
+# this askes for how many tokens to bet.
 
 # loop designed to accept only a bet of 1, 2, or 3
 valid_bet = [1,2,3]
 bet = int()
 while bet not in valid_bet:
-    bet = int(input("Enter bet: "))
+
+    bet = int(input("How many do you want to wager? "))
     if bet in valid_bet:
-        print (bet)
+        print ("You bet " + str(bet) + " tokens,")
+    else:
+        print ("A valid bet is 1, 2 or 3 tokens, {}." .format(name))
 
 
-print()
-print ("You bet " + str(bet) + " tokens,")
-
-# time delay of three seconds added for reading.
+# time delay of two seconds added and space added for reading.
 time.sleep (2)
+print()
 
 print ("OMG! this is exciting")
 
