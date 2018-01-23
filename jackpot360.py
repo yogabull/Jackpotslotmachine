@@ -26,13 +26,15 @@ continuePlay = 'yes'
 # time delay of three seconds added for reading.
 time.sleep (1)
 
+#////////////
 # loop designed to accept only a bet of 1, 2, or 3
-valid_bet = [1,2,3]
-bet = int()
-while bet not in valid_bet:
-    bet = int(input("Enter bet: "))
-    if bet in valid_bet:
-        print ("You bet " + str(bet) + " tokens,")
+# valid_bet = [1,2,3]
+# bet = int()
+# while bet not in valid_bet:
+#     bet = int(input("Enter bet: "))
+#     if bet in valid_bet:
+#         print ("You bet " + str(bet) + " tokens,")
+#////////////
 
 print()
 
