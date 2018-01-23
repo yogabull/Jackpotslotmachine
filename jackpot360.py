@@ -101,8 +101,7 @@ if  [reel_1] ==  [reel_2] and  [reel_2] == [reel_3]:
 elif  ([reel_1] != [reel_2]) or ([reel_2] != [reel_3]):
         print('You suck! Try again fool. ')
 
-# print ("Dang, you lost!")
-# print ("Your new balance is " + str(userBalance - bet))
+print ("Your new balance is " + str(userBalance - bet))
 
 
 # use result variable to figure payout.
